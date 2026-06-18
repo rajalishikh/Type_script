@@ -18,3 +18,12 @@ const number = kg_to_gramConverter(2) as number;
 console.log({ number });
 const number2 = kg_to_gramConverter("2 kg") as string;
 console.log({ number2 });
+
+type customError = {
+  message: string;
+};
+
+try {
+} catch (err) {
+  console.log((err as customError).message);
+}
